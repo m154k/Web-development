@@ -1,0 +1,148 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0;
+	background-color: #313131;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 550px) {
+	.container {
+		width: 100%;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	p {
+		font-size: 22px;
+	}
+}
+
+.container {
+	text-align: center;
+	flex: 1;
+	border: 1px solid red;
+	padding: 15px;
+}
+
+.result {
+	background-color: #fff;
+	opacity: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 300px;
+	width: 300px;
+	border: 1px solid red;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.result img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+button {
+	background-color: red;
+	opacity: 75%;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	margin: 2px;
+	width: 300px;
+}
+
+button:active {
+	transform: scale(0.97);
+}
+
+button:focus {
+	outline: none
+}
+
+a:link {
+	background-color: rgb(139, 43, 43);
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+	font-size: larger;
+	font-weight: bolder;
+	border-radius: 20px;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+     color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+	font-size: large;
+}
+
+/* .fade::after {
+    content: 'Me';
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.fade:hover::after {
+	opacity: 0.5;
+} */
+
+.textanimation {
+    position: relative;
+	flex: 1;
+	text-align: center;
+	color: black;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+
+.textanimation:hover {
+	cursor: pointer;
+	animation: blink 2s linear infinite;
+}
+
+@keyframes blink{
+	0%{
+		text-shadow: 1px 1px 10px rgb(139, 43, 43),
+					 0px 0px 20px rgb(139, 43, 43),
+					 0px 0px 40px rgb(139, 43, 43);
+	}
+	50%{
+		text-shadow: 1px 1px 10px rgb(139, 43, 43),
+					 0px 0px 20px rgb(139, 43, 43),
+					 0px 0px 40px rgb(139, 43, 43);
+	}
+}
+
+
